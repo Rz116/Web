@@ -1,36 +1,41 @@
-@charset "UTF-8";
+input[id = "Biginput"]
+{
+		background-color:Black;
+		color: white;
+		height: 50px;
+		width: 30%;
+		font-size: 100%;
+}
 
-body
+#Clear
 {
-		background-color: rgb(128, 128, 255);
-		font-family: Comic sans ms;
-		color: Black;
-		
+		height: 50px;
+		width: 5%;
+		background-color: #000000c2;
+		font-size: 100%;
+		color: white;
 }
-h1
+#Pi
 {
-		color: Black;
-		font-family: Comic sans ms;
-		text-align: left;
+		height: 50px;
+		width: 5%;
+		background-color: grey;
+		font-size: 100%;
+		color: white;
 }
-button 
+#Sqrt
 {
-		display: inline-block;
-		width: 105px;
+		height: 50px;
+		width: 5%;
+		background-color: grey;
+		font-size: 100%;
+		color: white;
 }
-label
+#Sq
 {
-		font-size: 20px;
-}
-input
-{
-		width: 200px;
-		display: inline-block;
-		font-size: 20px;
-		margin: 5px;
-}
-label[id = "pmessage"]
-{
-		font-size: 20px;
-		font-family: Comic sans ms;
+		height: 50px;
+		width: 5%;
+		background-color: grey;
+		font-size: 100%;
+		color: white;
 }
