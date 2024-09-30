@@ -10,10 +10,21 @@ function buttons()
 	document.getElementById("four").addEventListener("click",four);
 	document.getElementById("five").addEventListener("click",five);
 	document.getElementById("six").addEventListener("click",six);
-	document.getElementById("seven").addEventListener("click",seven);
+	document.getElementById("Seven").addEventListener("click",seven);
 	document.getElementById("eight").addEventListener("click",eight);
 	document.getElementById("nine").addEventListener("click",nine);
 	document.getElementById("zero").addEventListener("click",zero);
+	document.getElementById("Add").addEventListener("click",number);
+	document.getElementById("Pi").addEventListener("click",pi);
+	document.getElementById("Sqrt").addEventListener("click",sqrt);
+	document.getElementById("Sq").addEventListener("click",sq);
+	document.getElementById("Exp").addEventListener("click",exp);
+	document.getElementById("sin").addEventListener("click",sin);
+	document.getElementById("Cos").addEventListener("click",cos);
+	document.getElementById("Tan").addEventListener("click",tan);
+	document.getElementById("log").addEventListener("click",log);
+	document.getElementById("naturalog").addEventListener("click",naturallog);
+	document.getElementById("Equal").addEventListener("click",equals);
 	document.getElementById("Clear").addEventListener("click",clear);
 }
 function one()
@@ -66,8 +77,87 @@ function zero()
         var num0 = 0;
 	document.getElementById("Biginput").value += num0; 
 }
+function number()
+{
+	num1 = document.getElementById("Biginput").value;
+	operation = 'Add'
+	document.getElementById("Biginput").value = "";
+}
+function add()
+{
+	num2 = document.getElementById("Biginput").value;
+    result = parseInt(num1) + parseInt(num2);
+    
+}
+function pi()
+{
+	num1 = document.getElementById("Biginput").value;
+	document.getElementById("Biginput").value += "π";
+	if(document.getElementById("Biginput").value == "π")
+	{
+		result = Math.PI;
+	}
+	else
+	{
+		result = parseInt(num1) * Math.PI;
+	}
+}
+function sqrt()
+{
+	num1 = document.getElementById("Biginput").value;
+	document.getElementById("Biginput").value += ")Sqrt";
+	result = Math.sqrt(parseInt(num1));
+}
+function sq()
+{
+	num1 = document.getElementById("Biginput").value;
+	document.getElementById("Biginput").value += "^2";
+	result = parseInt(num1) ** 2;
+}
+function exp()
+{
+	num1 = document.getElementById("Biginput").value;
+	document.getElementById("Biginput").value = "";
+	document.getElementById("Biginput").value = "e^" + num1;
+	result = Math.exp(parseInt(num1));
+}
+function sin()
+{
+	num1 = document.getElementById("Biginput").value;
+	document.getElementById("Biginput").value += " Sin";
+	result = Math.sin(parseInt(num1));
+}
+function cos()
+{
+	num1 = document.getElementById("Biginput").value;
+	document.getElementById("Biginput").value += " Cos";
+	result = Math.cos(parseInt(num1));
+}
+function tan()
+{
+	num1 = document.getElementById("Biginput").value; 
+	document.getElementById("Biginput").value += " Tan";
+	result = Math.tan(parseInt(num1));
+}
+function log()
+{
+	num1 = document.getElementById("Biginput").value; 
+	document.getElementById("Biginput").value += " Log";
+	result = Math.log10(parseInt(num1));
+}
+function naturallog()
+{
+	num1 = document.getElementById("Biginput").value;
+	document.getElementById("Biginput").value += " ln"
+	result = Math.log(parseInt(num1))
+}
+function equals()
+{
+	document.getElementById("Biginput").value = result; 
+	result = null; 
+}
 function clear()
 {
-	num1 = document.getElementById("Biginput").value = "";
+	document.getElementById("Biginput").value = "";
 	document.getElementById("Biginput").disabled = true;
 }
