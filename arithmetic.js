@@ -5,15 +5,15 @@ function buttons()
 {
 	document.getElementById("Biginput").disabled = true;
 	document.getElementById("one").addEventListener("click",one);
-	Document.getElementById("two").addEventListener("click",two);
-	Document.getElementById("three").addEventListener("click",three);
-	Document.getElementById("four").addEventListener("click",four);
-	Document.getElementById("five").addEventListener("click",five);
-	Document.getElementById("six").addEventListener("click",six);
-	Document.getElementById("seven").addEventListener("click",seven);
-	Document.getElementById("eight").addEventListener("click",eight);
-	Document.getElementById("nine").addEventListener("click",nine);
-	Document.getElementById("zero").addEventListener("click",zero);
+	document.getElementById("two").addEventListener("click",two);
+	document.getElementById("three").addEventListener("click",three);
+	document.getElementById("four").addEventListener("click",four);
+	document.getElementById("five").addEventListener("click",five);
+	document.getElementById("six").addEventListener("click",six);
+	document.getElementById("seven").addEventListener("click",seven);
+	document.getElementById("eight").addEventListener("click",eight);
+	document.getElementById("nine").addEventListener("click",nine);
+	document.getElementById("zero").addEventListener("click",zero);
 	document.getElementById("Clear").addEventListener("click",clear);
 }
 function one()
