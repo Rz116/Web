@@ -10,7 +10,7 @@ function buttons()
 	document.getElementById("four").addEventListener("click",four);
 	document.getElementById("five").addEventListener("click",five);
 	document.getElementById("six").addEventListener("click",six);
-	document.getElementById("Seven").addEventListener("click",seven);
+	document.getElementById("seven").addEventListener("click",seven);
 	document.getElementById("eight").addEventListener("click",eight);
 	document.getElementById("nine").addEventListener("click",nine);
 	document.getElementById("zero").addEventListener("click",zero);
@@ -23,6 +23,8 @@ function buttons()
 	document.getElementById("Cos").addEventListener("click",cos);
 	document.getElementById("Tan").addEventListener("click",tan);
 	document.getElementById("log").addEventListener("click",log);
+	document.getElementById("Radians").addEventListener("click",radians);
+	document.getElementById("degrees").addEventListener("click",degree);
 	document.getElementById("naturalog").addEventListener("click",naturallog);
 	document.getElementById("Equal").addEventListener("click",equals);
 	document.getElementById("Clear").addEventListener("click",clear);
@@ -79,8 +81,10 @@ function zero()
 }
 function add()
 {
+	num1 = document.getElementById("Biginput").value;
 	document.getElementById("Biginput").value += "+";
 	num2 = document.getElementById("Biginput").value;
+	result = parseInt(num1) + parseInt(num2);
 }
 function pi()
 {
@@ -120,11 +124,11 @@ function sq()
 	num1 = document.getElementById("Biginput").value;
 	if(num1 == "")
 	{
-		alert("Type in a input")
+		alert("Type in a input");
 	}
 	else
 	{
-		document.getElementById("Biginput").value += "^2";
+		document.getElementById("Biginput").value += "^2"
 		result = parseInt(num1) ** 2;
 	}
 }
@@ -206,6 +210,16 @@ function naturallog()
 		document.getElementById("Biginput").value += " ln"
 		result = Math.log(parseInt(num1))
 	}
+}
+function degree()
+{
+	num1 = document.getElementById("Biginput").value; 
+	result = (num1 * 180) / Math.PI;
+}
+function radians()
+{
+	num1 = document.getElementById("Biginput").value; 
+	result = (num1 * Math.PI) / 180;
 }
 function equals()
 {
