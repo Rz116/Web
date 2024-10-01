@@ -15,8 +15,15 @@ input[id = "Biginput"]
 		font-size: 150%;
 		font-family:comic sans ms;
 }
-
-#Clear
+#Pi, #Sqrt, #Sq, #Percent, #log,#sin,#Plusminus, #Exp, #Exponent, #plusminus, #Division,#naturalog, #Cos, #Multiply,#Factorial, #Tan, #Subtract, #Add, #Decimal
+{
+		height: 50px;
+		width: 5%;
+		background-color: grey;
+		font-size: 100%;
+		color: white;
+}
+#Clear,#Backspace
 {
 		height: 50px;
 		width: 5%;
@@ -24,111 +31,8 @@ input[id = "Biginput"]
 		font-size: 100%;
 		color: white;
 }
-#Pi
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Sqrt
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Sq
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Percent
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Backspace
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(60,60,60);
-		font-size: 100%;
-		color: white;
-}
-#log
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#sin
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Exp
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Exponent
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Plusminus
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Division
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#naturalog
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Cos
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Seven
+
+#one, #two, #three, #four, #five, #six, #Seven, #eight, #nine
 {
 		height: 50px;
 		width: 5%;
@@ -136,79 +40,8 @@ input[id = "Biginput"]
 		font-size: 100%;
 		color: white;
 }
-#eight
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#nine
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#Multiply
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Factorial
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Tan
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#four
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#five
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#six
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#Subtract
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Radians
+
+#Radians,#degrees
 {
 		height: 50px;
 		width: 10.24%;
@@ -216,46 +49,7 @@ input[id = "Biginput"]
 		font-size: 100%;
 		color: white;
 }
-#one
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#two 
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#three 
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#Add
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#degrees
-{
-		height: 50px;
-		width: 10.24%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
+
 #zero
 {
 		height: 50px;
@@ -264,20 +58,11 @@ input[id = "Biginput"]
 		font-size: 100%;
 		color: white;
 }
-#Decimal
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
 #Equal
 {
 		height: 50px;
 		width: 5%;
-		background-color: Teal;
+		background-color: rgb(0, 128, 192);
 		font-size: 100%;
 		color: white;
 }
-
