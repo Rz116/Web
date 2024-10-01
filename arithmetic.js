@@ -81,10 +81,10 @@ function zero()
 }
 function add()
 {
-	num1 = document.getElementById("Biginput").value;
 	document.getElementById("Biginput").value += "+";
-	num2 = document.getElementById("Biginput").value;
-	result = parseInt(num1) + parseInt(num2);
+	
+	num1 = document.getElementById("Biginput").value;
+	result = num1
 }
 function pi()
 {
