@@ -317,3 +317,9 @@ function clear()
 	document.getElementById("Biginput").value = "";
 	document.getElementById("Input").value = "";
 }
+function backspace()
+{
+	num1 = document.getElementById("Biginput").value;
+	remove = num1.slice(0,-1);
+	document.getElementById("Biginput").value = remove;
+}
