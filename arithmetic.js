@@ -134,15 +134,13 @@ function pi()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += "π";
 		if(document.getElementById("Biginput").value == "π")
 		{
 			result = Math.PI;
 		}
 		else
 		{
-			result = parseFloat(num1) * Math.PI;
-			document.getElementById("Input").value = result; 
+			 document.getElementById("Biginput").value += Math.PI; 
 		}
 	}
 }
@@ -155,7 +153,6 @@ function sqrt()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " Sqrt";
 		result = Math.sqrt(parseFloat(num1));
 		document.getElementById("Input").value = result; 
 	}
@@ -198,7 +195,6 @@ function sin()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " Sin";
 		result = Math.sin(parseFloat(num1));
 		document.getElementById("Input").value = result; 
 	}
@@ -212,7 +208,6 @@ function cos()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " Cos";
 		result = Math.cos(parseFloat(num1));
 		document.getElementById("Input").value = result; 
 	}
@@ -226,7 +221,6 @@ function tan()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " Tan";
 		result = Math.tan(parseFloat(num1));
 		document.getElementById("Input").value = result; 
 	}
@@ -240,7 +234,6 @@ function log()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " Log";
 		result = Math.log10(parseFloat(num1));
 		document.getElementById("Input").value = result; 
 	}
@@ -254,7 +247,6 @@ function naturallog()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " ln"
 		result = Math.log(parseFloat(num1))
 		document.getElementById("Input").value = result; 
 	}
@@ -268,7 +260,6 @@ function degree()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " Degrees"
 		result = (parseFloat(num1) * 180) / Math.PI;
 		document.getElementById("Input").value = result; 
 	}
@@ -282,7 +273,6 @@ function radians()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += " Radians"
 		result = (parseFloat(num1) * Math.PI) / 180;
 		document.getElementById("Input").value = result; 
 	}
