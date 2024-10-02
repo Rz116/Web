@@ -1,20 +1,27 @@
 window.addEventListener("load",buttons);
 var num1, num2, result;
-var operation = ''
 function buttons()
 {
 	document.getElementById("Biginput").disabled = true;
+	document.getElementById("Input").disabled = true; 
 	document.getElementById("one").addEventListener("click",one);
 	document.getElementById("two").addEventListener("click",two);
 	document.getElementById("three").addEventListener("click",three);
 	document.getElementById("four").addEventListener("click",four);
 	document.getElementById("five").addEventListener("click",five);
 	document.getElementById("six").addEventListener("click",six);
-	document.getElementById("seven").addEventListener("click",seven);
+	document.getElementById("Seven").addEventListener("click",seven);
 	document.getElementById("eight").addEventListener("click",eight);
 	document.getElementById("nine").addEventListener("click",nine);
 	document.getElementById("zero").addEventListener("click",zero);
+	document.getElementById("Plusminus").addEventListener("click",plusminus);
+	document.getElementById("Decimal").addEventListener("click",float);
+	document.getElementById("Exponent").addEventListener("click",exponent);
+	document.getElementById("Percent").addEventListener("click",percent);
 	document.getElementById("Add").addEventListener("click",add);
+	document.getElementById("Subtract").addEventListener("click",subtract);
+	document.getElementById("Division").addEventListener("click",division);
+	document.getElementById("Multiply").addEventListener("click",multiply);
 	document.getElementById("Pi").addEventListener("click",pi);
 	document.getElementById("Sqrt").addEventListener("click",sqrt);
 	document.getElementById("Sq").addEventListener("click",sq);
@@ -25,6 +32,7 @@ function buttons()
 	document.getElementById("log").addEventListener("click",log);
 	document.getElementById("Radians").addEventListener("click",radians);
 	document.getElementById("degrees").addEventListener("click",degree);
+	document.getElementById("Factorial").addEventListener("click",factorialize)
 	document.getElementById("naturalog").addEventListener("click",naturallog);
 	document.getElementById("Equal").addEventListener("click",equals);
 	document.getElementById("Clear").addEventListener("click",clear);
@@ -79,12 +87,42 @@ function zero()
         var num0 = 0;
 	document.getElementById("Biginput").value += num0; 
 }
+
+
 function add()
 {
 	document.getElementById("Biginput").value += "+";
-	
+}
+function subtract()
+{
+	document.getElementById("Biginput").value += "-";
+}
+function division()
+{
+	document.getElementById("Biginput").value += "÷";
+}
+function multiply()
+{
+	document.getElementById("Biginput").value += "*";
+}
+function plusminus()
+{
+	document.getElementById("Biginput").value += "-";
+	num1 = parseInt(document.getElementById("Biginput").value);
+}
+function float()
+{
+	document.getElementById("Biginput").value +=".";
 	num1 = document.getElementById("Biginput").value;
-	result = num1
+	num1 = parseFloat(num1);
+}
+function exponent()
+{
+	document.getElementById("Biginput").value += "^";
+}
+function percent()
+{
+	document.getElementById("Biginput").value += "%"
 }
 function pi()
 {
@@ -102,7 +140,8 @@ function pi()
 		}
 		else
 		{
-			result = parseInt(num1) * Math.PI;
+			result = parseFloat(num1) * Math.PI;
+			document.getElementById("Input").value = result; 
 		}
 	}
 }
@@ -116,7 +155,8 @@ function sqrt()
 	else
 	{
 		document.getElementById("Biginput").value += ")Sqrt";
-		result = Math.sqrt(parseInt(num1));
+		result = Math.sqrt(parseFloat(num1));
+		document.getElementById("Input").value = result; 
 	}
 }
 function sq()
@@ -129,7 +169,8 @@ function sq()
 	else
 	{
 		document.getElementById("Biginput").value += "^2"
-		result = parseInt(num1) ** 2;
+		result = parseFloat(num1) ** 2;
+		document.getElementById("Input").value = result; 
 	}
 }
 function exp()
@@ -143,7 +184,8 @@ function exp()
 	{
 		document.getElementById("Biginput").value = "";
 		document.getElementById("Biginput").value = "e^" + num1;
-		result = Math.exp(parseInt(num1));
+		result = Math.exp(parseFloat(num1));
+		document.getElementById("Input").value = result; 
 	}
 }
 function sin()
@@ -156,7 +198,8 @@ function sin()
 	else
 	{
 		document.getElementById("Biginput").value += " Sin";
-		result = Math.sin(parseInt(num1));
+		result = Math.sin(parseFloat(num1));
+		document.getElementById("Input").value = result; 
 	}
 }
 function cos()
@@ -169,7 +212,8 @@ function cos()
 	else
 	{
 		document.getElementById("Biginput").value += " Cos";
-		result = Math.cos(parseInt(num1));
+		result = Math.cos(parseFloat(num1));
+		document.getElementById("Input").value = result; 
 	}
 }
 function tan()
@@ -182,7 +226,8 @@ function tan()
 	else
 	{
 		document.getElementById("Biginput").value += " Tan";
-		result = Math.tan(parseInt(num1));
+		result = Math.tan(parseFloat(num1));
+		document.getElementById("Input").value = result; 
 	}
 }
 function log()
@@ -195,7 +240,8 @@ function log()
 	else
 	{
 		document.getElementById("Biginput").value += " Log";
-		result = Math.log10(parseInt(num1));
+		result = Math.log10(parseFloat(num1));
+		document.getElementById("Input").value = result; 
 	}
 }
 function naturallog()
@@ -208,26 +254,64 @@ function naturallog()
 	else
 	{
 		document.getElementById("Biginput").value += " ln"
-		result = Math.log(parseInt(num1))
+		result = Math.log(parseFloat(num1))
+		document.getElementById("Input").value = result; 
 	}
 }
 function degree()
 {
 	num1 = document.getElementById("Biginput").value; 
-	result = (num1 * 180) / Math.PI;
+	if(num1 == "")
+	{
+		alert("Type in a number first")
+	}
+	else
+	{
+		document.getElementById("Biginput").value += " Degrees"
+		result = (parseFloat(num1) * 180) / Math.PI;
+		document.getElementById("Input").value = result; 
+	}
 }
 function radians()
 {
 	num1 = document.getElementById("Biginput").value; 
-	result = (num1 * Math.PI) / 180;
+	if (num1 == "")
+	{
+		alert("Type in a number first")
+	}
+	else
+	{
+		document.getElementById("Biginput").value += " Radians"
+		result = (parseFloat(num1) * Math.PI) / 180;
+		document.getElementById("Input").value = result; 
+	}
+}
+function factorialize()
+{
+	num1 = document.getElementById("Biginput");
+	if(parseInt(num1) == 0)
+	{
+		alert("You cannot factorialize 0")
+	}
+	else
+	{
+		var factor = 1
+		for(let i = 1; i <= parseInt(num1); i++);
+		{
+			result = factor * i
+		}
+		document.getElementById("Input").value = result;
+	}
 }
 function equals()
 {
-	document.getElementById("Biginput").value = result; 
+	var equation = document.getElementById("Biginput").value;
+	result = math.evaluate(equation);
+	document.getElementById("Input").value = result; 
 	result = null; 
 }
 function clear()
 {
 	document.getElementById("Biginput").value = "";
-	document.getElementById("Biginput").disabled = true;
+	document.getElementById("Input").value = "";
 }
