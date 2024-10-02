@@ -36,6 +36,7 @@ function buttons()
 	document.getElementById("naturalog").addEventListener("click",naturallog);
 	document.getElementById("Equal").addEventListener("click",equals);
 	document.getElementById("Clear").addEventListener("click",clear);
+	document.getElementById("Backspace").addEventListener("click",backspace);
 }
 function one()
 {
@@ -99,7 +100,7 @@ function subtract()
 }
 function division()
 {
-	document.getElementById("Biginput").value += "÷";
+	document.getElementById("Biginput").value += "/";
 }
 function multiply()
 {
@@ -154,7 +155,7 @@ function sqrt()
 	}
 	else
 	{
-		document.getElementById("Biginput").value += ")Sqrt";
+		document.getElementById("Biginput").value += " Sqrt";
 		result = Math.sqrt(parseFloat(num1));
 		document.getElementById("Input").value = result; 
 	}
@@ -289,14 +290,15 @@ function radians()
 function factorialize()
 {
 	num1 = document.getElementById("Biginput");
-	if(parseInt(num1) == 0)
+	document.getElementById("Biginput").value += "!";
+	if(num1 == "")
 	{
-		alert("You cannot factorialize 0")
+		alert("Type in a number first");
 	}
 	else
 	{
 		var factor = 1
-		for(let i = 1; i <= parseInt(num1); i++);
+		for(let i = 1; i <= num1; i++);
 		{
 			result = factor * i
 		}
