@@ -1,62 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Calculator</title>
-		<link rel = "stylesheet" href = "customize.css"></link>
-		<script src = "script.js"></script>
-		<script src=  "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
-        integrity= "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"></script> 
-        
-   		<script src= "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
-        integrity=  "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
-        crossorigin= "anonymous"
-        referrerpolicy= "no-referrer"></script>
+		<title>Average</title>
+		<script src = "Average.js"></script>
 	</head>
 	
 	<body>
-			<input type = "text" id = "Biginput"></input><br>
-			<input type = "text" id = "Input"></input><br>
-			<button type = "button" id = "Clear">C</button>
-			<button type = "button" id = "Pi">π</button>
-			<button type = "button" id = "Sqrt">Sqrt</button>
-			<button type = "button" id = "Sq">Sq</button>
-			<button type = "button" id = "Percent">%</button>
-			<button type = "button" id = "Backspace">del</button><br>
-			
-			<button type = "button" id = "log">log</button>
-			<button type = "button" id = "sin">Sin</button>
-			<button type = "button" id = "Exp">exp</button>
-			<button type = "button" id = "Exponent">^</button>
-			<button type = "button" id = "Plusminus">(-)</button>
-			<button type = "button" id = "Division">÷</button><br>
-			
-			<button type = "button" id = "naturalog">ln</button>
-			<button type = "button" id = "Cos">Cos</button>
-			<button type = "button" id = "Seven">7</button>
-			<button type = "button" id = "eight">8</button>
-			<button type = "button" id = "nine">9</button>
-			<button type = "button" id = "Multiply">X</button><br>
-			
-			<button type = "button" id = "Factorial">n!</button>
-			<button type = "button" id = "Tan">tan</button>
-			<button type = "button" id = "four">4</button>
-			<button type = "button" id = "five">5</button>
-			<button type = "button" id = "six">6</button>
-			<button type = "button" id = "Subtract">-</button><br>
-			
-			<button type = "button" id = "Radians">radians</button>
-			<button type = "button" id = "one">1</button>
-			<button type = "button" id = "two">2</button>
-			<button type = "button" id = "three">3</button>
-			<button type = "button" id = "Add">+</button><br>
-			
-			<button type = "button" id = "degrees">Degrees</button>
-			<button type = "button" id = "zero">0</button>
-			<button type = "button" id = "Decimal">.</button>
-			<button type = "button" id = "Equal">=</button>
-			
-			
+			<label id = "LblNumberGrades">Enter Number of Grades Averaged: </label>
+			<input type = "text" id = "txtGrades" placeholder = "Number of grades" ></input><br>
+			<button type = "button" id = "btnSubmit">Submit</button>
 	</body>
 </html>
