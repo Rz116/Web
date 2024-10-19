@@ -7,7 +7,7 @@ function buttons()
 
 function Number()
 {
-	var Grade_number = document.getElementById("txtGrades").value;
+	var Grade_number = parseInt(document.getElementById("txtGrades").value);
 	if (Grade_number == "")
 		{
 			alert("Type in a number");
