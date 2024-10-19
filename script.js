@@ -1,5 +1,4 @@
 window.addEventListener("load",buttons); 
-var Grade_number
 
 function buttons()
 {
@@ -8,7 +7,7 @@ function buttons()
 
 function Number()
 {
-	Grade_number = document.getElementById("txtGrades").value;
+	var Grade_number = document.getElementById("txtGrades").value;
 	if (Grade_number == "")
 		{
 			alert("Type in a number");
@@ -17,17 +16,13 @@ function Number()
 		{
 			document.getElementById("LblNumberGrades").textContent = "Grades: ";
 			document.getElementById("txtGrades").value = "";
-			Function()
+			Grade(Grade_number)
 		}
 }
-function Function()
-{
-	document.getElementById("btnSubmit").addEventListener("click",Grade);
-}
-function Grade()
+function Grade(Amount)
 {
 	var sum = 0
-	for (let i; i < Grade_number; i++)
+	for (let i; i <= Amount; i++)
 	{
 		var grade = parseFloat(document.getElementById("txtGrades").value);
 		document.getElementById("txtGrades").value = "";
