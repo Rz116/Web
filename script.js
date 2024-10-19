@@ -22,7 +22,7 @@ function Number()
 function Grade(Amount)
 {
 	var sum = 0
-	for (let i; i <= Amount; i++)
+	for (let i = 0; i <= Amount; i++)
 	{
 		var grade = parseFloat(document.getElementById("txtGrades").value);
 		document.getElementById("txtGrades").value = "";
