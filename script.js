@@ -36,7 +36,7 @@ function Grade(Amount)
 	
 	if(grade >= 100 || grade < 0)
 	{
-	        alert("Type in a correct input"); 
+	    alert("Type in a correct input"); 
 		document.getElementById("txtGrades").value = ""; 
 		document.getElementById("txtGrades").focus();
 	}
@@ -46,16 +46,16 @@ function Grade(Amount)
 		{
 			sum = sum + parseFloat(grade);
 			document.getElementById("txtGrades").value = "";
-		        document.getElementById("txtGrades").focus()
+		    document.getElementById("txtGrades").focus()
 			grade = 0 
 		}
 		count = count + 1
 		if (count == Amount) 
 		{
+			document.getElementById("txtGrades").disabled = true;
 			Average = sum/Amount; 
 			gpa = Average/25; 
 		} 
 	}
-	
-	document.getElementById("lblmessage").textContent = gpa;
+	document.getElementById("lbldisplay").textContent = gpa;
 }
