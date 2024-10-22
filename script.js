@@ -1,5 +1,5 @@
 window.addEventListener("load",buttons); 
-var Grade_number = "", sum = 0, grade;
+var Grade_number = "", sum = 0, grade,count = 0,Average, gpa;
 function buttons()
 {	
 	document.getElementById("btnSubmit").addEventListener("click",Check);
@@ -33,20 +33,29 @@ function Number()
 }
 function Grade(Amount)
 {
-	for (let i = 1; i <= Amount; i++)
+	
+	if(grade >= 100 || grade < 0)
 	{
-		if(grade >= 100 || grade < 0)
-		{
-			alert("Type in a correct input"); 
-			document.getElementById("txtGrades").value = ""; 
-			document.getElementById("txtGrades").focus();
-		}
-		else
-		{
-			document.getElementById("txtGrades").value = "";
-			document.getElementById("txtGrades").focus();
-			sum = sum + parseFloat(grade);
-		}
+	        alert("Type in a correct input"); 
+		document.getElementById("txtGrades").value = ""; 
+		document.getElementById("txtGrades").focus();
 	}
-	document.getElementById("lblmessage").textContent = sum;
+	else
+	{
+		for (let i = 1 ; i <= Amount; i++) 
+		{
+			sum = sum + parseFloat(grade);
+			document.getElementById("txtGrades").value = "";
+		        document.getElementById("txtGrades").focus()
+			grade = 0 
+		}
+		count = count + 1
+		if (count == Amount) 
+		{
+			Average = sum/Amount; 
+			gpa = Average/25; 
+		} 
+	}
+	
+	document.getElementById("lblmessage").textContent = gpa;
 }
