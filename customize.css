@@ -1,69 +1,19 @@
+label
+{
+		font-family: comic sans ms; 
+		font-size: 20px;
+}
+body 
+{
+		background-color: Green;
+}
+input
+{
+		font-family: comic sans ms; 
+		font-size: 20px; 
+}
 button
 {
-		font-family: comic sans ms;
-		display: inline-margin;
-		margin: 0;
-		padding: 0;
-		font-size: 120%;
-}
-#Biginput,#Input
-{
-		background-color: Black;
-		color: white;
-		height: 25px;
-		width: 30.86%;
-		display: inline-margin;
-		font-size: 130%;
-		font-family:comic sans ms;
-}
-#Pi, #Sqrt, #Sq, #Percent, #log,#sin,#Plusminus, #Exp, #Exponent, #plusminus, #Division,#naturalog, #Cos, #Multiply,#Factorial, #Tan, #Subtract, #Add, #Decimal
-{
-		height: 50px;
-		width: 5%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-#Clear,#Backspace
-{
-		height: 50px;
-		width: 5%;
-		background-color:rgb(60,60,60);
-		font-size: 100%;
-		color: white;
-}
-
-#one, #two, #three, #four, #five, #six, #Seven, #eight, #nine
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-
-#Radians,#degrees
-{
-		height: 50px;
-		width: 10.24%;
-		background-color: grey;
-		font-size: 100%;
-		color: white;
-}
-
-#zero
-{
-		height: 50px;
-		width: 10.3%;
-		background-color: rgb(64,64,64);
-		font-size: 100%;
-		color: white;
-}
-#Equal
-{
-		height: 50px;
-		width: 5%;
-		background-color: rgb(0, 128, 192);
-		font-size: 100%;
-		color: white;
+		height: 40px; 
+		width: 60px;
 }
