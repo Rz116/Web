@@ -19,9 +19,10 @@ function Check()
 function Number()
 {
 	Grade_number = document.getElementById("txtGrades").value;
-	if (Grade_number == "")
+	var check = parseFloat(Grade_number) % 1;
+	if (Grade_number == "" || check !== 0 )
 		{
-			alert("Type in a number");
+			alert("Type in a correct input");
 		}
 	else
 		{
@@ -34,7 +35,7 @@ function Number()
 function Grade(Amount)
 {
 	
-	if(grade >= 100 || grade < 0)
+	if(grade > 100 || grade < 0 || grade == "")
 	{
 	    alert("Type in a correct input"); 
 		document.getElementById("txtGrades").value = ""; 
@@ -42,20 +43,20 @@ function Grade(Amount)
 	}
 	else
 	{
-		for (let i = 1 ; i <= Amount; i++) 
+		for(let i = 1; i <= Amount; i++)
 		{
 			sum = sum + parseFloat(grade);
 			document.getElementById("txtGrades").value = "";
-		    document.getElementById("txtGrades").focus()
-			grade = 0 
+	    		document.getElementById("txtGrades").focus()	
+	    		break;
 		}
-		count = count + 1
-		if (count == Amount) 
+		count = count + 1; 
+		if(count == Amount)
 		{
-			document.getElementById("txtGrades").disabled = true;
 			Average = sum/Amount; 
 			gpa = Average/25; 
-		} 
+		}
 	}
 	document.getElementById("lbldisplay").textContent = gpa;
+	document.getElementById("lbl_average").textContent = Average;
 }
