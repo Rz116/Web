@@ -9,14 +9,15 @@ table,th,td
 
 #periodhead
 {
-		width: 90px; 
+		width: 120px; 
 		text-align: center; 
 		font-family: Comic sans ms;
 }
 
 #course
 {
-		width: 90px;
+		width: 120px;
+		height: 45px;
 }
 
 h1
@@ -26,7 +27,7 @@ h1
 }
 #osisTag
 {
-		margin-left: 35.5%;
+		margin-left: 32%;
 		font-size: 20px;
 		font-family: comic sans ms;
 }
