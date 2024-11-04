@@ -1,62 +1,41 @@
-window.addEventListener("load",buttons); 
-var Grade_number = "", sum = 0, grade,count = 0,Average, gpa;
-function buttons()
-{	
-	document.getElementById("btnSubmit").addEventListener("click",Check);
-}
-function Check()
+window.addEventListener("load",big);
+var Name, Grade, Classes
+function big()
 {
-	if(Grade_number == "")
+	document.getElementById("Name_Submit").addEventListener("click",Check1);
+	document.getElementById("Grade_Submit").addEventListener("click",Check2);
+	document.getElementById("submit").addEventListener("click",Check3);
+	document.getElementById("Class_Submit").addEventListener("click",Check4);
+	document.getElementById("Teacher_Submit").addEventListener("click",Check5);
+
+}	
+
+function Check1()
+{
+	Name = document.getElementById("txtName").value; 
+	if (Name == "")
 	{
-		Number()
+		alert("Type in a correct input")
+		document.getElementById("Name_Submit").focus();
 	}
 	else
 	{
-		grade = document.getElementById("txtGrades").value;
-		Grade(Grade_number)
+		localStorage.setItem("FUllname",Name); 
+		document.getElementById("txtGradeLevel").focus();
 	}
 }
-function Number()
+function Check2()
 {
-	Grade_number = document.getElementById("txtGrades").value;
-	var check = parseFloat(Grade_number) % 1;
-	if (Grade_number == "" || check !== 0 )
+	Grade = document.getElementById("txtGradeLevel").value; 
+	var Check = Grade % 1;
+	if(Grade == "" || Check != 0)
 		{
-			alert("Type in a correct input");
+			alert("Input a correct input")
+			document.getElementById("txtGradeLevel").focus();
 		}
 	else
 		{
-			Grade_number = parseInt(Grade_number);
-			document.getElementById("txtGrades").value = null;
-			document.getElementById("txtGrades").focus();
-			document.getElementById("LblNumberGrades").textContent = "Grades: ";
+			localStorage.setItem("Grade_level",Grade);
+			document.getElementById("txtClasses").focus();
 		}
-}
-function Grade(Amount)
-{
-	
-	if(grade > 100 || grade < 0 || grade == "")
-	{
-	    alert("Type in a correct input"); 
-		document.getElementById("txtGrades").value = ""; 
-		document.getElementById("txtGrades").focus();
-	}
-	else
-	{
-		for(let i = 1; i <= Amount; i++)
-		{
-			sum = sum + parseFloat(grade);
-			document.getElementById("txtGrades").value = "";
-	    		document.getElementById("txtGrades").focus()	
-	    		break;
-		}
-		count = count + 1; 
-		if(count == Amount)
-		{
-			Average = sum/Amount; 
-			gpa = Average/25; 
-		}
-	}
-	document.getElementById("lbldisplay").textContent = gpa;
-	document.getElementById("lbl_average").textContent = Average;
 }
