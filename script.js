@@ -7,11 +7,11 @@ function big()
 	document.getElementById("submit").addEventListener("click",Check3);
 	document.getElementById("Class_Submit").addEventListener("click",Check4);
 	document.getElementById("Teacher_Submit").addEventListener("click",Check5);
-
 }	
 
 function Check1()
 {
+	localStorage.clear();
 	Name = document.getElementById("txtName").value; 
 	if (Name == "")
 	{
@@ -38,4 +38,23 @@ function Check2()
 			localStorage.setItem("Grade_level",Grade);
 			document.getElementById("txtClasses").focus();
 		}
+}
+function Check3()
+{
+	Classes = document.getElementById("txtClasses").value; 
+	var Check2 = Classes % 1;
+	
+	if(Classes == "" || Check2 != 0)
+	{
+		alert("Input a correct input")
+		document.getElementById("txtClasses").focus();
+	}
+	else 
+	{
+		document.getElementById("txtClassname").focus();
+	}
+}
+function Check4()
+{
+	
 }
