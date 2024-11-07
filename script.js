@@ -22,7 +22,7 @@ function Check1()
 	else
 	{
 		localStorage.setItem("FUllname",Name); 
-		document.getElementById("txtGradeLevel").focus();
+		document.getElementById("txtOsis").focus();
 	}
 }
 function Check2()
@@ -37,14 +37,14 @@ function Check2()
 	else
 		{
 			localStorage.setItem("Grade_level",Grade);
-			document.getElementById("txtOsis").focus();
+			document.getElementById("txtClasses").focus();
 		}
 }
 function Check3()
 {
 	Osis = document.getElementById("txtOsis").value; 
 	var check = Osis % 1; 
-	if(check == "" || check != 0)
+	if(Osis == "" || check != 0)
 		{
 			alert("Type in a correct input"); 
 			document.getElementById("txtOsis").focus();
@@ -52,7 +52,7 @@ function Check3()
 	else
 	{
 		localStorage.setItem("Osis_num",Osis); 
-		document.getElementById("txtClasses").focus();
+		document.getElementById("txtGradeLevel").focus();
 	}
 }
 function Check4()
@@ -60,7 +60,7 @@ function Check4()
 	Classes = document.getElementById("txtClasses").value; 
 	var Check2 = Classes % 1;
 	
-	if(Classes == "" || Check2 != 0)
+	if(Classes == "" || Check2 != 0 || Classes > 8 || Classes < 0)
 	{
 		alert("Input a correct input")
 		document.getElementById("txtClasses").focus();
@@ -81,10 +81,46 @@ function Check5()
 	}
 	else
 	{
-		localStorage.setItem("Class_name", Class);
 		document.getElementById("txtClassname").value = "";
-		document.getElementById("txtClassname").focus();
 		count = count + 1 
+		switch(true)
+		{
+			case count == 1: 
+				localStorage.setItem("Class_name1", Class);
+				document.getElementById("txtClassname").focus();
+				break;
+			case count == 2: 
+				localStorage.setItem("Class_name2", Class); 
+				document.getElementById("txtClassname").focus();
+				break;
+			case count == 3: 
+				localStorage.setItem("Class_name3", Class);
+				document.getElementById("txtClassname").focus();
+				break;
+			case count == 4: 
+				localStorage.setItem("Class_name4", Class);
+				document.getElementById("txtClassname").focus();
+				break; 
+			case count == 5: 
+				localStorage.setItem("Class_name5", Class);
+				document.getElementById("txtClassname").focus();
+				break;
+			case count == 6: 
+				localStorage.setItem("Class_name6", Class); 
+				document.getElementById("txtClassname").focus();
+				break;
+			case count == 7: 
+				localStorage.setItem("Class_name7", Class); 
+				document.getElementById("txtClassname").focus();
+				break; 
+			case count == 8: 
+				localStorage.setItem("Class_name8", Class); 
+				document.getElementById("txtClassname").focus();
+				break;
+			default: 
+				document.getElementById("txtClassname").focus();
+				break;
+		}
 		if(count == Classes)
 		{
 			document.getElementById("txtTeacher").focus();
