@@ -1,5 +1,5 @@
 window.addEventListener("load",big);
-var Name, Grade, Classes,Class, count = 0,Osis;
+var Name, Grade, Classes,Class, count = 0,Osis,Teacher;
 function big()
 {
 	document.getElementById("Name_Submit").addEventListener("click",Check1);
@@ -127,3 +127,62 @@ function Check5()
 		}
 	}
 }
+function Check6()
+{
+	count = 0;
+	Teacher = document.getElementById("txtTeacher").value;
+	
+	if(Teacher == "")
+	{
+		alert("Type in a correct input");
+		document.getElementById("txtTeacher").focus();
+	}
+	else
+	{
+		document.getElementById("txtTeacher").value = "";
+		count = count + 1; 
+		switch(true)
+		{
+			case count == 1: 
+				localStorage.setItem("Teacher_name1", Teacher);
+				document.getElementById("txtTeacher").focus();
+				break;
+			case count == 2: 
+				localStorage.setItem("Teacher_name1", Teacher); 
+				document.getElementById("txtTeacher").focus();
+				break;
+			case count == 3: 
+				localStorage.setItem("Teacher_name1", Teacher);
+				document.getElementById("txtTeacher").focus();
+				break;
+			case count == 4: 
+				localStorage.setItem("Teacher_name1", Teacher);
+				document.getElementById("txtTeacher").focus();
+				break; 
+			case count == 5: 
+				localStorage.setItem("Teacher_name1", Teacher);
+				document.getElementById("txtTeacher").focus();
+				break;
+			case count == 6: 
+				localStorage.setItem("Teacher_name1", Teacher); 
+				document.getElementById("txtTeacher").focus();
+				break;
+			case count == 7: 
+				localStorage.setItem("Teacher_name1", Teacher); 
+				document.getElementById("txtTeacher").focus();
+				break; 
+			case count == 8: 
+				localStorage.setItem("Teacher_name1", Teacher); 
+				document.getElementById("txtTeacher").focus();
+				break;
+			default: 
+				document.getElementById("txtTeacher").focus();
+				break;
+		}
+		if(count == Classes)
+		{
+			
+		}
+	}
+}
+
