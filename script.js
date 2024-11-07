@@ -1,12 +1,13 @@
 window.addEventListener("load",big);
-var Name, Grade, Classes
+var Name, Grade, Classes,Class, count = 0,Osis;
 function big()
 {
 	document.getElementById("Name_Submit").addEventListener("click",Check1);
 	document.getElementById("Grade_Submit").addEventListener("click",Check2);
-	document.getElementById("submit").addEventListener("click",Check3);
-	document.getElementById("Class_Submit").addEventListener("click",Check4);
-	document.getElementById("Teacher_Submit").addEventListener("click",Check5);
+	document.getElementById("Osis_Submit").addEventListener("click",Check3)
+	document.getElementById("submit").addEventListener("click",Check4);
+	document.getElementById("Class_Submit").addEventListener("click",Check5);
+	document.getElementById("Teacher_Submit").addEventListener("click",Check6);
 }	
 
 function Check1()
@@ -36,10 +37,25 @@ function Check2()
 	else
 		{
 			localStorage.setItem("Grade_level",Grade);
-			document.getElementById("txtClasses").focus();
+			document.getElementById("txtOsis").focus();
 		}
 }
 function Check3()
+{
+	Osis = document.getElementById("txtOsis").value; 
+	var check = Osis % 1; 
+	if(check == "" || check != 0)
+		{
+			alert("Type in a correct input"); 
+			document.getElementById("txtOsis").focus();
+		}
+	else
+	{
+		localStorage.setItem("Osis_num",Osis); 
+		document.getElementById("txtClasses").focus();
+	}
+}
+function Check4()
 {
 	Classes = document.getElementById("txtClasses").value; 
 	var Check2 = Classes % 1;
@@ -54,7 +70,24 @@ function Check3()
 		document.getElementById("txtClassname").focus();
 	}
 }
-function Check4()
+function Check5()
 {
+	Class = document.getElementById("txtClassname").value; 
 	
+	if(Class == "")
+	{	
+		alert("Type in a correct input")
+		document.getElementById("txtClassname").focus();
+	}
+	else
+	{
+		localStorage.setItem("Class_name", Class);
+		document.getElementById("txtClassname").value = "";
+		document.getElementById("txtClassname").focus();
+		count = count + 1 
+		if(count == Classes)
+		{
+			document.getElementById("txtTeacher").focus();
+		}
+	}
 }
