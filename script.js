@@ -124,12 +124,12 @@ function Check5()
 		if(count == Classes)
 		{
 			document.getElementById("txtTeacher").focus();
+			count = 0;
 		}
 	}
 }
 function Check6()
 {
-	count = 0;
 	Teacher = document.getElementById("txtTeacher").value;
 	
 	if(Teacher == "")
@@ -148,31 +148,31 @@ function Check6()
 				document.getElementById("txtTeacher").focus();
 				break;
 			case count == 2: 
-				localStorage.setItem("Teacher_name1", Teacher); 
+				localStorage.setItem("Teacher_name2", Teacher); 
 				document.getElementById("txtTeacher").focus();
 				break;
 			case count == 3: 
-				localStorage.setItem("Teacher_name1", Teacher);
+				localStorage.setItem("Teacher_name3", Teacher);
 				document.getElementById("txtTeacher").focus();
 				break;
 			case count == 4: 
-				localStorage.setItem("Teacher_name1", Teacher);
+				localStorage.setItem("Teacher_name4", Teacher);
 				document.getElementById("txtTeacher").focus();
 				break; 
 			case count == 5: 
-				localStorage.setItem("Teacher_name1", Teacher);
+				localStorage.setItem("Teacher_name5", Teacher);
 				document.getElementById("txtTeacher").focus();
 				break;
 			case count == 6: 
-				localStorage.setItem("Teacher_name1", Teacher); 
+				localStorage.setItem("Teacher_name6", Teacher); 
 				document.getElementById("txtTeacher").focus();
 				break;
 			case count == 7: 
-				localStorage.setItem("Teacher_name1", Teacher); 
+				localStorage.setItem("Teacher_name7", Teacher); 
 				document.getElementById("txtTeacher").focus();
 				break; 
 			case count == 8: 
-				localStorage.setItem("Teacher_name1", Teacher); 
+				localStorage.setItem("Teacher_name8", Teacher); 
 				document.getElementById("txtTeacher").focus();
 				break;
 			default: 
@@ -181,8 +181,7 @@ function Check6()
 		}
 		if(count == Classes)
 		{
-			
+			window.location.href = "YESS.html";
 		}
 	}
 }
-
