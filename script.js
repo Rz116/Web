@@ -83,6 +83,8 @@ function Check5()
 	{
 		document.getElementById("txtClassname").value = "";
 		count = count + 1 
+		Inputter = count + 1
+		document.getElementById("InputClassName").textContent = "Input Class " + Inputter + ": ";
 		switch(true)
 		{
 			case count == 1: 
@@ -141,6 +143,8 @@ function Check6()
 	{
 		document.getElementById("txtTeacher").value = "";
 		count = count + 1; 
+		Inputter = count + 1
+		document.getElementById("InputTeacher").textContent = "Input Teacher  " + Inputter + ": ";
 		switch(true)
 		{
 			case count == 1: 
