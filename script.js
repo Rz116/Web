@@ -17,7 +17,8 @@ function Check1()
 	if (Name == "")
 	{
 		alert("Type in a correct input")
-		document.getElementById("Name_Submit").focus();
+		document.getElementById("txtName").value = "";
+		document.getElementById("txtName").focus();
 	}
 	else
 	{
@@ -32,6 +33,7 @@ function Check2()
 	if(Grade == "" || Check != 0 || Grade > 12 || Grade < 1)
 		{
 			alert("Input a correct input")
+			document.getElementById("txtGradeLevel").value = "";
 			document.getElementById("txtGradeLevel").focus();
 		}
 	else
@@ -47,6 +49,7 @@ function Check3()
 	if(Osis == "" || check != 0)
 		{
 			alert("Type in a correct input"); 
+			document.getElementById("txtOsis").value = "";
 			document.getElementById("txtOsis").focus();
 		}
 	else
@@ -63,6 +66,7 @@ function Check4()
 	if(Classes == "" || Check2 != 0 || Classes > 8 || Classes < 0)
 	{
 		alert("Input a correct input")
+		document.getElementById("txtClasses").value = "";
 		document.getElementById("txtClasses").focus();
 	}
 	else 
@@ -77,6 +81,7 @@ function Check5()
 	if(Class == "")
 	{	
 		alert("Type in a correct input")
+		document.getElementById("txtClassname").value = "";
 		document.getElementById("txtClassname").focus();
 	}
 	else
@@ -137,6 +142,7 @@ function Check6()
 	if(Teacher == "")
 	{
 		alert("Type in a correct input");
+		document.getElementById("txtTeacher").value = "";
 		document.getElementById("txtTeacher").focus();
 	}
 	else
