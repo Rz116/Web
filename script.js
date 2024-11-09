@@ -29,7 +29,7 @@ function Check2()
 {
 	Grade = document.getElementById("txtGradeLevel").value; 
 	var Check = Grade % 1;
-	if(Grade == "" || Check != 0)
+	if(Grade == "" || Check != 0 || Grade > 12 || Grade < 1)
 		{
 			alert("Input a correct input")
 			document.getElementById("txtGradeLevel").focus();
@@ -84,7 +84,7 @@ function Check5()
 		document.getElementById("txtClassname").value = "";
 		count = count + 1 
 		Inputter = count + 1
-		document.getElementById("InputClassName").textContent = "Input Class " + Inputter + ": ";
+		document.getElementById("InputClassName").textContent = "Input Period " + Inputter + " Class:";
 		switch(true)
 		{
 			case count == 1: 
@@ -144,7 +144,7 @@ function Check6()
 		document.getElementById("txtTeacher").value = "";
 		count = count + 1; 
 		Inputter = count + 1
-		document.getElementById("InputTeacher").textContent = "Input Teacher  " + Inputter + ": ";
+		document.getElementById("InputTeacher").textContent = "Input Period " + Inputter + " Teacher: ";
 		switch(true)
 		{
 			case count == 1: 
