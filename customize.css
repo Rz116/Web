@@ -6,6 +6,10 @@ table,th,td
 		margin-left: auto;
 		font-family: comic sans ms;
 }
+body 
+{
+		background-color: pink;
+}
 
 #periodhead
 {
@@ -18,6 +22,7 @@ table,th,td
 {
 		width: 120px;
 		height: 45px;
+		font-size: 16.5px;
 }
 
 h1
@@ -27,7 +32,36 @@ h1
 }
 #osisTag
 {
-		margin-left: 32%;
-		font-size: 20px;
+		margin-left: 25.8%;
+		font-size: 16px;
 		font-family: comic sans ms;
+}
+#GradeTag
+{
+		margin-left: 25.8%;
+		font-size: 16px; 
+		font-family: comic sans ms;
+}
+#nameTag
+{
+		margin-left: 25.8%; 
+		font-size: 16px; 
+		font-family: comic sans ms;
+}
+#OsisNumber,#Grade_level,#fullname
+{
+		font-size: 16px; 
+		font-family: comic sans ms;
+}
+#time 
+{
+		font-size: 12px;
+}
+#Period1_Teacher_Day1,#Period1_Teacher_Day2,#Period1_Teacher_Day3,#Period1_Teacher_Day4,#Period1_Teacher_Day5,#Period2_Teacher_Day1,#Period2_Teacher_Day2,#Period2_Teacher_Day3,
+#Period2_Teacher_Day4,#Period2_Teacher_Day5,#Period3_Teacher_Day1,#Period3_Teacher_Day2,#Period3_Teacher_Day3,#Period3_Teacher_Day4,#Period3_Teacher_Day5,#Period4_Teacher_Day1,
+#Period4_Teacher_Day2,#Period4_Teacher_Day3,#Period4_Teacher_Day4,#Period4_Teacher_Day5,#Period5_Teacher_Day1,#Period5_Teacher_Day2,#Period5_Teacher_Day3,#Period5_Teacher_Day4,
+#Period5_Teacher_Day5,#Period6_Teacher_Day1,#Period6_Teacher_Day2,#Period6_Teacher_Day3,#Period6_Teacher_Day4,#Period6_Teacher_Day5,#Period7_Teacher_Day1,#Period7_Teacher_Day2,
+#Period7_Teacher_Day3,#Period7_Teacher_Day4,#Period7_Teacher_Day5,#Period8_Teacher_Day1,#Period8_Teacher_Day2,#Period8_Teacher_Day3,#Period8_Teacher_Day4,#Period8_Teacher_Day5
+{
+		font-size: 12px;
 }
