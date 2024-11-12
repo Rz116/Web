@@ -8,7 +8,7 @@ table,th,td
 }
 body 
 {
-		background-color: pink;
+		background-color: rgb(128, 128, 255);
 }
 
 #periodhead
@@ -62,6 +62,14 @@ h1
 #Period4_Teacher_Day2,#Period4_Teacher_Day3,#Period4_Teacher_Day4,#Period4_Teacher_Day5,#Period5_Teacher_Day1,#Period5_Teacher_Day2,#Period5_Teacher_Day3,#Period5_Teacher_Day4,
 #Period5_Teacher_Day5,#Period6_Teacher_Day1,#Period6_Teacher_Day2,#Period6_Teacher_Day3,#Period6_Teacher_Day4,#Period6_Teacher_Day5,#Period7_Teacher_Day1,#Period7_Teacher_Day2,
 #Period7_Teacher_Day3,#Period7_Teacher_Day4,#Period7_Teacher_Day5,#Period8_Teacher_Day1,#Period8_Teacher_Day2,#Period8_Teacher_Day3,#Period8_Teacher_Day4,#Period8_Teacher_Day5
+{
+		font-size: 12px;
+		margin-right: 78px;
+}
+#Period1_room_1,#Period1_room_2,#Period1_room_3,#Period1_room_4,#Period1_room_5,#Period2_room_1,#Period2_room_2,#Period2_room_3,#Period2_room_4,#Period2_room_5,#Period3_room_1,
+#Period3_room_2,#Period3_room_3,#Period3_room_4,#Period3_room_5,#Period4_room_1,#Period4_room_2,#Period4_room_3,#Period4_room_4,#Period4_room_5,#Period5_room_1,#Period5_room_2,
+#Period5_room_3,#Period5_room_4,#Period5_room_5,#Period6_room_1,#Period6_room_2,#Period6_room_3,#Period6_room_4,#Period6_room_5,#Period7_room_1,#Period7_room_2,#Period7_room_3,
+#Period7_room_4,#Period7_room_5,#Period8_room_1,#Period8_room_2,#Period8_room_3,#Period8_room_4,#Period8_room_5
 {
 		font-size: 12px;
 }
