@@ -9,7 +9,7 @@ table,th,td
 }
 body 
 {
-		background-color: rgb(128, 128, 255);
+		background-color: white;
 }
 
 #periodhead
@@ -72,3 +72,4 @@ h1
 #Period7_room_4,#Period7_room_5,#Period8_room_1,#Period8_room_2,#Period8_room_3,#Period8_room_4,#Period8_room_5
 {
 		font-size: 12px;
+}
