@@ -7,7 +7,8 @@ function big()
 	document.getElementById("Osis_Submit").addEventListener("click",Check3)
 	document.getElementById("submit").addEventListener("click",Check4);
 	document.getElementById("Class_Submit").addEventListener("click",Check5);
-	document.getElementById("Teacher_Submit").addEventListener("click",Check6);
+	document.getElementById("Room_Submit").addEventListener("click",Check6);
+	document.getElementById("Teacher_Submit").addEventListener("click",Check7);
 }	
 
 function Check1()
@@ -130,12 +131,74 @@ function Check5()
 		}
 		if(count == Classes)
 		{
-			document.getElementById("txtTeacher").focus();
+			document.getElementById("txtRoom").focus();
 			count = 0;
 		}
 	}
 }
 function Check6()
+{
+	var Room = document.getElementById("txtRoom").value; 
+	
+	if(Room == "")
+	{	
+		alert("Type in a correct input")
+		document.getElementById("txtRoom").value = "";
+		document.getElementById("txtRoom").focus();
+	}
+	else
+	{
+		document.getElementById("txtRoom").value = "";
+		count = count + 1 
+		Inputter = count + 1
+		document.getElementById("txtRoom").textContent = "Input Period " + Inputter + " Room:";
+		switch(true)
+		{
+			case count == 1: 
+				localStorage.setItem("Class_Room1", Class);
+				document.getElementById("txtRoom").focus();
+				break;
+			case count == 2: 
+				localStorage.setItem("Class_Room2", Class); 
+				document.getElementById("txtRoom").focus();
+				break;
+			case count == 3: 
+				localStorage.setItem("Class_Room3", Class);
+				document.getElementById("txtRoom").focus();
+				break;
+			case count == 4: 
+				localStorage.setItem("Class_Room4", Class);
+				document.getElementById("txtRoom").focus();
+				break; 
+			case count == 5: 
+				localStorage.setItem("Class_Room5", Class);
+				document.getElementById("txtRoom").focus();
+				break;
+			case count == 6: 
+				localStorage.setItem("Class_Room6", Class); 
+				document.getElementById("txtRoom").focus();
+				break;
+			case count == 7: 
+				localStorage.setItem("Class_Room7", Class); 
+				document.getElementById("txtRoom").focus();
+				break; 
+			case count == 8: 
+				localStorage.setItem("Class_Room8", Class); 
+				document.getElementById("txtRoom").focus();
+				break;
+			default: 
+				document.getElementById("txtRoom").focus();
+				break;
+		}
+		if(count == Classes)
+		{
+			document.getElementById("txtTeacher").focus();
+			count = 0;
+		}
+	}
+}
+
+function Check7()
 {
 	Teacher = document.getElementById("txtTeacher").value;
 	
