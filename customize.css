@@ -1,10 +1,11 @@
 table,th,td
 {
-		border: 1px solid black; 
+		border: 2px solid black; 
 		border-collapse: collapse;
 		margin-right: auto; 
 		margin-left: auto;
 		font-family: comic sans ms;
+		text-align:center;
 }
 body 
 {
@@ -13,14 +14,14 @@ body
 
 #periodhead
 {
-		width: 120px; 
+		width: 200px; 
 		text-align: center; 
 		font-family: Comic sans ms;
 }
 
 #course
 {
-		width: 120px;
+		width: 200px;
 		height: 45px;
 		font-size: 16.5px;
 }
@@ -32,19 +33,19 @@ h1
 }
 #osisTag
 {
-		margin-left: 10.5%;
+		margin-left: 8%;
 		font-size: 16px;
 		font-family: comic sans ms;
 }
 #GradeTag
 {
 		font-size: 16px; 
-		margin-left: 12%;
+		margin-left: 9%;
 		font-family: comic sans ms;
 }
 #nameTag
 {
-		margin-left: 25.8%; 
+		margin-left:30.5%; 
 		font-size: 16px; 
 		font-family: comic sans ms;
 }
@@ -71,4 +72,3 @@ h1
 #Period7_room_4,#Period7_room_5,#Period8_room_1,#Period8_room_2,#Period8_room_3,#Period8_room_4,#Period8_room_5
 {
 		font-size: 12px;
-}
