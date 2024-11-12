@@ -27,7 +27,7 @@ function Textcontent()
 	document.getElementById("Period1_Teacher_Day3").textContent = TeacherOne;
 	document.getElementById("Period1_Teacher_Day4").textContent = TeacherOne;
 	document.getElementById("Period1_Teacher_Day5").textContent = TeacherOne;
-	
+
 	classtwo = localStorage.getItem("Class_name2"); 
 	document.getElementById("Period2_Class_Day1").textContent = classtwo; 
 	document.getElementById("Period2_Class_Day2").textContent = classtwo; 
@@ -125,5 +125,65 @@ function Textcontent()
 	document.getElementById("Period8_Teacher_Day3").textContent = TeacherEight; 
 	document.getElementById("Period8_Teacher_Day4").textContent = TeacherEight; 
 	document.getElementById("Period8_Teacher_Day5").textContent = TeacherEight; 
+	
+	Rooms()
+}
+function Rooms()
+{
+	var RoomOne = localStorage.getItem("Class_Room1"); 
+	document.getElementById("Period1_room_1").textContent = RoomOne;
+	document.getElementById("Period1_room_2").textContent = RoomOne;
+	document.getElementById("Period1_room_3").textContent = RoomOne;
+	document.getElementById("Period1_room_4").textContent = RoomOne;
+	document.getElementById("Period1_room_5").textContent = RoomOne;
+	
+	var RoomTwo = localStorage.getItem("Class_Room2"); 
+	document.getElementById("Period2_room_1").textContent = RoomTwo;
+	document.getElementById("Period2_room_2").textContent = RoomTwo;
+	document.getElementById("Period2_room_3").textContent = RoomTwo;
+	document.getElementById("Period2_room_4").textContent = RoomTwo;
+	document.getElementById("Period2_room_5").textContent = RoomTwo;
+	
+	var RoomThree = localStorage.getItem("Class_Room3"); 
+	document.getElementById("Period3_room_1").textContent = RoomThree;
+	document.getElementById("Period3_room_2").textContent = RoomThree;
+	document.getElementById("Period3_room_3").textContent = RoomThree;
+	document.getElementById("Period3_room_4").textContent = RoomThree;
+	document.getElementById("Period3_room_5").textContent = RoomThree;	
+	
+	var RoomFour = localStorage.getItem("Class_Room4"); 
+	document.getElementById("Period4_room_1").textContent = RoomFour;
+	document.getElementById("Period4_room_2").textContent = RoomFour;
+	document.getElementById("Period4_room_3").textContent = RoomFour;
+	document.getElementById("Period4_room_4").textContent = RoomFour;
+	document.getElementById("Period4_room_5").textContent = RoomFour;
+	
+	var RoomFive = localStorage.getItem("Class_Room5"); 
+	document.getElementById("Period5_room_1").textContent = RoomFive;
+	document.getElementById("Period5_room_2").textContent = RoomFive;
+	document.getElementById("Period5_room_3").textContent = RoomFive;
+	document.getElementById("Period5_room_4").textContent = RoomFive;
+	document.getElementById("Period5_room_5").textContent = RoomFive;
+	
+	var RoomSix = localStorage.getItem("Class_Room6"); 
+	document.getElementById("Period6_room_1").textContent = RoomSix;
+	document.getElementById("Period6_room_2").textContent = RoomSix;
+	document.getElementById("Period6_room_3").textContent = RoomSix;
+	document.getElementById("Period6_room_4").textContent = RoomSix;
+	document.getElementById("Period6_room_5").textContent = RoomSix;
 
+	var RoomSeven = localStorage.getItem("Class_Room7"); 
+	document.getElementById("Period7_room_1").textContent = RoomSeven;
+	document.getElementById("Period7_room_2").textContent = RoomSeven;
+	document.getElementById("Period7_room_3").textContent = RoomSeven;
+	document.getElementById("Period7_room_4").textContent = RoomSeven;
+	document.getElementById("Period7_room_5").textContent = RoomSeven;	
+	
+	var RoomEight = localStorage.getItem("Class_Room8"); 
+	document.getElementById("Period8_room_1").textContent = RoomEight;
+	document.getElementById("Period8_room_2").textContent = RoomEight;
+	document.getElementById("Period8_room_3").textContent = RoomEight;
+	document.getElementById("Period8_room_4").textContent = RoomEight;
+	document.getElementById("Period8_room_5").textContent = RoomEight;
+	
 }
