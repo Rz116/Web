@@ -139,8 +139,8 @@ function Check5()
 function Check6()
 {
 	var Room = document.getElementById("txtRoom").value; 
-	
-	if(Room == "")
+	var Check = Room % 1;
+	if(Room == "" || Check != 0)
 	{	
 		alert("Type in a correct input")
 		document.getElementById("txtRoom").value = "";
@@ -151,39 +151,39 @@ function Check6()
 		document.getElementById("txtRoom").value = "";
 		count = count + 1 
 		Inputter = count + 1
-		document.getElementById("txtRoom").textContent = "Input Period " + Inputter + " Room:";
+		document.getElementById("InputRoom").textContent = "Input Period " + Inputter + " Room:";
 		switch(true)
 		{
 			case count == 1: 
-				localStorage.setItem("Class_Room1", Class);
+				localStorage.setItem("Class_Room1", Room);
 				document.getElementById("txtRoom").focus();
 				break;
 			case count == 2: 
-				localStorage.setItem("Class_Room2", Class); 
+				localStorage.setItem("Class_Room2", Room); 
 				document.getElementById("txtRoom").focus();
 				break;
 			case count == 3: 
-				localStorage.setItem("Class_Room3", Class);
+				localStorage.setItem("Class_Room3", Room);
 				document.getElementById("txtRoom").focus();
 				break;
 			case count == 4: 
-				localStorage.setItem("Class_Room4", Class);
+				localStorage.setItem("Class_Room4", Room);
 				document.getElementById("txtRoom").focus();
 				break; 
 			case count == 5: 
-				localStorage.setItem("Class_Room5", Class);
+				localStorage.setItem("Class_Room5", Room);
 				document.getElementById("txtRoom").focus();
 				break;
 			case count == 6: 
-				localStorage.setItem("Class_Room6", Class); 
+				localStorage.setItem("Class_Room6", Room); 
 				document.getElementById("txtRoom").focus();
 				break;
 			case count == 7: 
-				localStorage.setItem("Class_Room7", Class); 
+				localStorage.setItem("Class_Room7", Room); 
 				document.getElementById("txtRoom").focus();
 				break; 
 			case count == 8: 
-				localStorage.setItem("Class_Room8", Class); 
+				localStorage.setItem("Class_Room8", Room); 
 				document.getElementById("txtRoom").focus();
 				break;
 			default: 
@@ -258,3 +258,4 @@ function Check7()
 		}
 	}
 }
+
