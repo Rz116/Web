@@ -11,6 +11,16 @@ body
 {
 		background-color: white;
 }
+img 
+{
+		margin-left: 13%;
+		position: absolute;
+}
+#image
+{
+		margin-left:77%;
+		object-position: 20% 100%;
+}
 
 #periodhead
 {
