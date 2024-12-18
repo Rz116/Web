@@ -1,6 +1,9 @@
 h1
 { 
-   	margin-left: 45%; 
+    margin: auto; 
+	left:0%; 
+	right:0%; 
+	position:absolute;
     font-size: 70px;
     display: inline;
 }
