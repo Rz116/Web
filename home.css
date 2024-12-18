@@ -1,4 +1,4 @@
-h1
+h2
 {
     text-align: center;
     font-size: 70px;
@@ -10,7 +10,8 @@ h1
     margin-right: auto;
 }
 img 
-{   
+{   top:0;
+    bottom: 0;
     position:absolute;
 }
 #benefit1,#consequence1,#benefit2,#consequence2
@@ -21,7 +22,6 @@ button
 {
     height: 200px; 
     width: 22%;
-    
 }
 #benefit1,#benefit2
 {
