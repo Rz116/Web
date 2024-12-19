@@ -4,7 +4,7 @@ h1
     text-align: center; 
     margin:auto;
     margin-bottom: 5%;
-    font-size: 70px;
+    font-size: 65px;
 }
 #Heading
 {
@@ -63,12 +63,16 @@ body
     display: inline-block;
     font-family:Segoe UI;
 }
-h2
-{
-    margin-left: 6%;
-}
 button
 {
     font-family:Segoe UI;
 }
-
+#paragraph
+{
+    margin-left:6%;
+    width:45%; 
+}
+h3
+{
+    font-size: 24px;
+}
