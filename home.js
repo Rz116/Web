@@ -17,7 +17,7 @@ function Direct2()
 }
 function Direct3()
 {
-    window.location.href = "Home.html"
+    window.location.href = "home.html"
 }
 function Direct4()
 {
