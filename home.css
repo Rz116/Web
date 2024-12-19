@@ -8,42 +8,52 @@ h1
 #Heading
 {
     width: 100%;
-    height:100%;
     margin-left: auto; 
     margin-right: auto;
-    background-color: blanchedalmond;
 }
 img 
-{   top:0;
-    bottom: 0;
+{   
     position:absolute;
     display: inline;
 }
 #benefit2,#consequence2
 {
     margin-left: 8%;
+    border-radius: 15px;
 }
 #benefit1,#consequence1
 {
 	margin-left: 6%;
+	border-radius: 15px;
+}
+#benefit1:hover,#consequence1:hover,#benefit2:hover,#consequence2:hover
+{
+	box-shadow: 0 12px 16px 0 grey, 0 17px 50px 0 grey; 
+	transition-duration: 0.3s,0.3s;
 }
 
-button
+#benefit1,#consequence1,#benefit2,#consequence2
 {
     height: 260px; 
     width: 22%;
-}
+}ss
 #benefit1,#benefit2
 {
     margin-bottom: 40px;
 }
 #BM
 {
-    margin-top:1%;
+    margin-top:-3%;
 	height: 60px; 
 	width: 100px;
     float:right;
-    margin-right: .5%;
+    margin-right: 0.5%;
+    border-radius: 50%;
+}
+#BM:hover
+{
+	box-shadow: 0 12px 16px 0 grey, 0 17px 50px 0 grey;
+	transition-duration: 0.3s;
 }
 body
 {
