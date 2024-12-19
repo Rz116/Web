@@ -1,8 +1,9 @@
+
 h1
 {  
     text-align: center; 
     margin:auto;
-    display:block;
+    margin-bottom: 5%;
     font-size: 70px;
 }
 #Heading
@@ -14,7 +15,7 @@ h1
 img 
 {   
     position:absolute;
-    display: inline;
+    display: block;
 }
 #benefit2,#consequence2
 {
@@ -34,20 +35,20 @@ img
 
 #benefit1,#consequence1,#benefit2,#consequence2
 {
-    height: 260px; 
-    width: 22%;
-}ss
-#benefit1,#benefit2
+    height: 250px; 
+    width: 23%;
+}
+#benefit1,#benefit2,#consequence1,#consequence2
 {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 #BM
 {
-    margin-top:-3%;
-	height: 60px; 
+    margin-top: 1%;
+	height: 70px; 
 	width: 100px;
     float:right;
-    margin-right: 0.5%;
+    margin-right: 0.3%;
     border-radius: 50%;
 }
 #BM:hover
@@ -59,4 +60,15 @@ body
 {
     margin:0;
     padding:0;
+    display: inline-block;
+    font-family:Segoe UI;
 }
+h2
+{
+    margin-left: 6%;
+}
+button
+{
+    font-family:Segoe UI;
+}
+
