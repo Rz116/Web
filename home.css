@@ -74,8 +74,9 @@ button
 	background-color:rgb(137,207,240);
     margin-left:6%;
     width:45%; 
+    border: 2px solid black;
 	padding: 12px;
-	border-radius: 20%;
+	border-radius: 15px;
 }
 h3
 {
