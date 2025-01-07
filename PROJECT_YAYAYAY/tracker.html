@@ -35,8 +35,14 @@
             <button type = "button" id = "submit_4"><b>SUBMIT</b></button>
         </div>
         <div id = "question_5">
-            <label id = "question2">How much exercise are you getting per day currently?</label><br>
-            <input type = "text" id = "answer_5" ></input><br>
+            <label id = "question2">What is your activity level?</label><br>
+            <select id  = "answer_5">
+                <option>Sedentary</option>
+                <option>Lightly Active</option>
+                <option>Moderately active</option>
+                <option>Very active</option>
+                <option>Extra active</option>
+            </select><br>
             <button type = "button" id = "submit_5"><b>SUBMIT</b></button>
         </div>
         <div id = "question_6">
@@ -46,6 +52,15 @@
                 <option id = "Man">Man</option>
             </select><br>
             <button type = "button" id = "submit_6"><b>SUBMIT</b></button>
+        </div>
+        <div id = "information">
+            <label>Current BMI: </label>
+            <label id = "bmi"></label><br>
+            <label>Calories needed to maintain current weight: </label>
+            <label id = "bmr"></label><br>
+            <label>Calories needed to lose one pound per week: </label>
+            <label id = "deficit"></label>
+
         </div>
     </body>
 </html>
