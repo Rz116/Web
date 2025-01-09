@@ -1,0 +1,62 @@
+#logo
+{
+    position:absolute; 
+}
+#title
+{
+    text-align:center; 
+    display:block; 
+    font-size: 65px;
+    margin-bottom:5%;
+}
+#Heading
+{
+    float: right; 
+    height: 70px; 
+    margin-top: -11%;
+    width: 100px;
+    border-radius: 12px;
+    background-color:white;
+    margin-right: 0.3%;
+    font-family:Segoe UI;
+    transition-duration: 0.3s;
+}
+#Heading:hover
+{
+    box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
+    text-decoration: underline;
+}
+#heading
+{
+    width :100%; 
+    height:200px;
+    border: 0.000001px solid black; 
+    background-color:rgb(137,207,240);
+}
+body
+{
+    background-image:url();
+    padding: 0; 
+    margin:0;
+    font-family: Segoe UI;
+}
+#Information
+{
+    width:60%;
+    margin-left: auto; 
+    margin-right:auto;
+    padding:3%;
+    border:3px solid black;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    background:transparent;
+}
+a:hover
+{
+    color:black;
+}
+h2
+{
+    font-size:30px;
+    text-align:center;
+}
