@@ -1,0 +1,118 @@
+#Top
+{
+    width:100%; 
+    height:200px;
+    margin-right:auto; 
+    margin-left: auto; 
+    font-family: Segoe UI; 
+    background-color: rgb(176,196,222);
+    border: 0.00001px solid black;
+}
+#title
+{
+    text-align: center;
+    font-size: 65px;
+    display:block;
+    margin-bottom:5%;
+}
+img
+{
+    position:absolute;
+}
+#Home
+{
+    font-size:14px;
+    margin-top: -10%;
+	height: 70px; 
+	width: 100px;
+    float:right;
+    margin-right: 0.3%;
+    border-radius: 12px;
+    background-color:white;
+    font-family:Segoe UI;
+    transition-duration: 0.3s;
+}
+#Home:hover
+{
+    box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
+    text-decoration: underline;
+}
+#Information
+{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right:auto;
+    padding:5%; 
+    font-size: 20px; 
+    font-family:Segoe UI;
+    width:30%;
+    border-radius:15px;
+    text-align:center;
+    margin-bottom: 6%;
+}
+#Subtitle
+{
+    font-family:segoe UI;
+    text-align:center;
+}
+#Workout,#nutrition,#Chart_Weight,#Chart,#Monthly_loss
+{
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:6%;
+}
+body
+{
+	padding:0; 
+	margin:0;
+}
+table,td,th
+{
+    border: 2px solid black; 
+    border-radius:10px;
+    border-collapse:separate;
+    text-align:center;
+    font-family:Segoe UI;
+    font-size:16px;
+    margin-left: auto; 
+    margin-right:auto;
+}  
+#working,#Target,#ppp
+{
+    width: 185px;
+}
+#month,#Weight
+{
+    width:185px;
+    height:100px;
+}
+#Chart
+{
+    margin-right:auto; 
+    margin-left:auto;
+}
+#Plate,#row,#data
+{
+    width:75%;
+    height:350px;
+    border-radius: 12px;
+    border-collapse:separate;
+}
+#data
+{
+    width:180px;
+    transition-duration: 0.3s;
+}
+#data:hover
+{
+    width:200px;
+    box-shadow: 0 17px 12px grey, 0 12px 50px grey;
+}
+#protein,#Fats,#Carbs
+{
+    margin-left:auto; 
+    margin-right:auto;
+    position:relative;
+    width:100%; 
+    height:100%;
+}
