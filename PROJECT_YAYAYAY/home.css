@@ -1,4 +1,4 @@
-#Heading
+#Heading,#Heading_2
 {
     width: 100%;
     height:600px;
@@ -49,7 +49,7 @@ img
     height: 230px; 
     width: 20%;
 }
-#Weight_Tracker
+#Weight_Tracker,#Weight_Tracker_login
 {
     display:block; 
     margin-left:auto; 
@@ -59,16 +59,47 @@ img
     width: 10%;
     border-radius: 15px;
     font-size:18px;
-    margin-bottom:10%;
+    margin-bottom:8%;
     transition-duration:0.4s;
     background:transparent;
 }
-#Weight_Tracker:hover
+#Weight_Tracker_2
+{
+    display:block; 
+    margin-left:auto; 
+    margin-right:auto;
+    margin-top: -8%;
+    height:80px; 
+    width:15%; 
+    font-size:16px;
+    border-radius:15px;
+    background:transparent;
+    transition-duration:0.4s;
+
+}
+#Weight_Tracker_2:hover
+{
+    box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey; 
+    width:18%; 
+    height:100px; 
+}
+#Weight_Tracker:hover,#Weight_Tracker_login:hover
 {
     box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
     width:12%; 
     height:60px;
     font-size:20px;
+}
+#BM_login
+{
+    margin-top: -30%;
+	height: 70px; 
+	width: 100px;
+    float:right;
+    margin-right: 0.3%;
+    border-radius: 12px;
+    background-color:white;
+    transition-duration: 0.3s;
 }
 #BM
 {
@@ -81,7 +112,40 @@ img
     background-color:white;
     transition-duration: 0.3s;
 }
-#BM:hover
+#BM_2
+{
+    margin-top: -28%;
+	height: 70px; 
+	width: 100px;
+    float:right;
+    margin-right: 0.3%;
+    border-radius: 12px;
+    background-color:white;
+    transition-duration: 0.3s;
+}
+#BM_3
+{
+    margin-top: -26%;
+	height: 70px; 
+	width: 100px;
+    float:right;
+    margin-right: 0.3%;
+    border-radius: 12px;
+    background-color:white;
+    transition-duration: 0.3s;
+}
+#PROFILE
+{
+    margin-top: -20.5%;
+	height: 70px; 
+	width: 100px;
+    float:right;
+    margin-right: 0.3%;
+    border-radius: 12px;
+    background-color:white;
+    transition-duration: 0.3s;
+}
+#BM:hover,#BM_2:hover,#BM_login:hover,#BM_3:hover,#PROFILE:hover
 {
 	box-shadow: 0 10px 16px 0 grey, 0 17px 51px 0 grey;
     text-decoration: underline; 

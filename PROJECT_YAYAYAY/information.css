@@ -35,7 +35,6 @@
 }
 body
 {
-    background-image:url();
     padding: 0; 
     margin:0;
     font-family: Segoe UI;
@@ -49,7 +48,7 @@ body
     border:3px solid black;
     border-radius: 20px;
     margin-bottom: 5%;
-    background:transparent;
+    background-color:white;
 }
 a:hover
 {

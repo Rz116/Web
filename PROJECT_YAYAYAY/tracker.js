@@ -1,5 +1,17 @@
-window.addEventListener("load",button); 
+window.addEventListener("load",login_status); 
 var weight,weight_2,age,height,activity,gender,BMR_round;
+function login_status()
+{
+    let status = localStorage.getItem("login_status"); 
+    if(status == "")
+    {
+        window.location.href = "login.html"; 
+    }
+    else
+    {
+        button();
+    }
+}
 function button()
 {
     document.getElementById("question_2").style.display = "none";
@@ -8,7 +20,6 @@ function button()
     document.getElementById("question_5").style.display = "none";
     document.getElementById("question_6").style.display = "none";
     document.getElementById("Home").addEventListener("click",Home_Page);
-	document.getElementById("direct").addEventListener("click",Output);
     document.getElementById("Submit_1").addEventListener("click",Question_1); 
     document.getElementById("submit_2").addEventListener("click",Question_2); 
     document.getElementById("submit_3").addEventListener("click",Question_3); 
@@ -20,23 +31,8 @@ function Home_Page()
 {
     window.location.href = "Home.html";
 }
-function Output()
-{
-    var check = localStorage.length;
-    if(check < 6)
-    {
-        alert("You must complete everything in order to go the output page!");
-		document.getElementById("answer_1").focus();
-    }
-    else
-    {
-        window.location.href = "Output.Html";
-
-    }
-}
 function Question_1()
 {
-    localStorage.clear();
     weight = document.getElementById("answer_1").value;
     let check = weight/1;
     let other = parseFloat(weight)/1;
