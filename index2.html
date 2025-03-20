@@ -1,14 +1,15 @@
-
 <html>
 	<head>
 		<title>Hello</title>
 		<link rel = "stylesheet" href = "/static/custom.css"></link>
 	</head>
 	<body>	
-		<form method = "Post">
+		<form method = "Get" action = "/output">
 			{% for i in range(0,periodnumber)%}
-				<label>What is your class for period </label><br>
+				<label>What is your class for period {{i + 1}}:  </label>
+				<input name = "name{{i}}"></input><br>
 			{%endfor%}
+			<button type = "Submit">SUBMIT</button>
 		</form>
 	</body>
 
