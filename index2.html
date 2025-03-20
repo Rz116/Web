@@ -1,24 +1,15 @@
+
 <html>
 	<head>
 		<title>Hello</title>
-		<link rel = "stylesheet" href = "/static/custom.css"
+		<link rel = "stylesheet" href = "/static/custom.css"></link>
 	</head>
 	<body>	
 		<form method = "Post">
-			<table id = "tbinfo">
-				<tr>
-					{% for header in headings %} 
-					<th>{{header}}</th> 
-					{% endfor %} 
-				</tr>
-				{% for row in data %}
-				<tr>
-					{%for cell in row%}
-					<td>{{cell}}</td> 
-					{% endfor %}
-				</tr>
-				{% endfor %}
-			</table>
+			{% for i in range(0,periodnumber)%}
+				<label>What is your class for period </label><br>
+			{%endfor%}
+		</form>
 	</body>
 
 </html>
