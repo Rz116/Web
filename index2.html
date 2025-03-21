@@ -1,13 +1,20 @@
+
 <html>
 	<head>
 		<title>Hello</title>
 		<link rel = "stylesheet" href = "/static/custom.css"></link>
+		<script src = "/static/check.js"></script>
 	</head>
 	<body>	
-		<form method = "Get" action = "/output">
+		<h1> Class information </h1>
+		<form method = "Post" action = "/output">
 			{% for i in range(0,periodnumber)%}
 				<label>What is your class for period {{i + 1}}:  </label>
-				<input name = "name{{i}}"></input><br>
+				<input name = "course{{i + 1}}" autofocus></input><br>
+				<label>What is your teacher for period {{i + 1}}: </label> 
+				<input name = "teacher{{i + 1}}"></input><br>
+				<label>What is the room number for period {{i + 1}}: </label>
+				<input name = "room{{i + 1}}"></input><br>
 			{%endfor%}
 			<button type = "Submit">SUBMIT</button>
 		</form>
