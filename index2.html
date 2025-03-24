@@ -7,37 +7,38 @@
 	<body>	
 		<h1> Class information </h1>
 		<form method = "Post" action = "/output">
-				{% for i in range(0,periodnumber)%}
-					<table>
-						<tr> <td><b><label>Period {{i + 1}}</label></b><br></td> </tr>
-						<tr>
-							<td> 
-								<label> Class: </label>
-							</td>
-							<td>
-								<input name = "course{{i + 1}}" autofocus></input>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label>Teacher: </label> 
-							</td>
-							<td>
-								<input name = "teacher{{i + 1}}"></input>
-							</td>
-						</tr>
-						<tr>	
-							<td>
-								<label>Room: </label>
-							</td>
-							<td>
+			{% for i in range(0,periodnumber)%}
+				<table>
+					<tr> <td><b><label>Period {{i + 1}}</label></b><br></td> </tr>
+					<tr>
+						<td> 
+							<label> Class: </label>
+						</td>
+						<td>
+							<input name = "course{{i + 1}}" autofocus></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Teacher: </label> 
+						</td>
+						<td>
+							<input name = "teacher{{i + 1}}"></input>
+						</td>
+					</tr>
+					<tr>	
+						<td>
+							<label>Room: </label>
+						</td>
+						<td>
 								<input name = "room{{i + 1}}"></input><br>
-							</td>
-						</tr>
-					</table>
+						</td>
+					</tr>
+				</table>
 					<hr>
-				{%endfor%}
-				<button type = "Submit">SUBMIT</button>
+			{%endfor%}
+			<label>{{check}}</label><br>
+			<button type = "Submit">SUBMIT</button>
 		</form>
 	</body>
 
