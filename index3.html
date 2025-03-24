@@ -2,13 +2,25 @@
 <html>
 	<head>
 		<title>Flask test</title>
+		<link rel = "stylesheet" href = "/static/customize.css"></link>
 	</head>
 	<body>
-		<h1>Input the following information</h1>
+		<h1>Schedule</h1>
 		<form method = "post">
-			<label id = "lblmessage">{{course}} </label><br> 
-			<label id = "lblmessage2">{{teachers}} </label><br>
-			<label id = "lblmessage3">{{rooms}} </label><br>
+			<table> 
+				<tr> 
+					{% for header in headings %} 
+					<th>{{header}}</th>
+					{%endfor%}
+				</tr>
+				{% for i in range(0,length) %} 
+					<tr>
+						<td> {{i + 1}} </td> 
+						<td> {{course[i]}}</td>
+						<td> {{teachers[i]}}</td> 
+						<td> {{rooms[i]}} </td>
+					</tr>
+				{%endfor%}
 		</form>
 	</body>
 </html>
