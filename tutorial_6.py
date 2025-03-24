@@ -14,14 +14,14 @@ def mainscreen():
     if (request.method == "POST"):           
         period = request.form.get("periodsinput")
         if (period == ""):            
-            return render_template("index1.html", periodsinput = "" )
+            return render_template("index1.html", periodsinput = "", message = "You Must type something in the input box")
         else:
             check = list(period)
             length = len(check)
             for i in range(0,int(length)):
                 check2 = ord(check[i])
                 if(check2 < 48 or check2 > 57):
-                    return render_template("index1.html", periodsinput = "")
+                    return render_template("index1.html", periodsinput = "", message = "You must type in a correct input(Must be number)")
             return render_template('index2.html', periodnumber = int(period))
     else:
         outputscreen()
@@ -29,29 +29,31 @@ def mainscreen():
     
 @app.route('/output',methods = ["GET","POST"])
 def outputscreeen():
+    headings = ["Period","Course", "Teacher", "Room"]
     classes = []
     teachers = []
     rooms = []
     for i in range(0,int(period)):
         course = request.form.get("course" + str(i + 1))
         teacher = request.form.get("teacher" + str(i+1))
-        if (len(course) < 1 or len(teacher) < 1):
-            return render_template('index2.html', periodnumber = int(period))
+        if (course == "" or teacher == ""):
+            return render_template('index2.html', periodnumber = int(period), check = "You must type something in the input box")
         classes.append(course)
         teachers.append(teacher)
     for i in range(0,int(period)):
         room = request.form.get("room" + str(i+1))
-        if(len(room) < 3):
-            return render_template('index2.html',periodnumber = int(period))
+        if(len(room) < 3 or len(room) > 3):
+            return render_template('index2.html',periodnumber = int(period),check = "You must type in a room number that is 3 digits long")
         else:
             char = list(room)
             length = len(char)
             for i in range(0,length):
                 check = ord(char[i])
                 if(check < 48 or check > 57):
-                    return render_template('index2.html',periodnumber = int(period))
+                    return render_template('index2.html',periodnumber = int(period), check = "You must type in a number that is 3 digits long")
             rooms.append(room)
-    return render_template('index3.html', course = classes, teachers = teachers, rooms = rooms)
+    length = len(rooms)
+    return render_template('index3.html', course = classes, teachers = teachers, rooms = rooms,length = length,headings = headings)
 
         
 if __name__ == "__main__":
