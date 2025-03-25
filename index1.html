@@ -1,13 +1,45 @@
 <html>
 	<head>
 		<title>Flask test</title>
-		<link rel = "stylesheet" href = "/static/custom.css"></link>
+		<link rel = "stylesheet" href = "/static/customize3.css"></link>
 	</head>
 	<body>
 		<h1>Schedule Builder</h1>
 		<form method = "post" action = "/info">
-			<label id = "lblmessage">How many periods do you have: </label>
-			<input name = "periodsinput" type = "text"autofocus></input><br><br>
+			<table>
+				<tr>
+					<td>
+						<label id = "lblmessage">Amount of periods: </label>
+					</td> 
+					<td>
+						<input name = "periodsinput" type = "text"autofocus></input><br>
+					</td>
+				</tr>
+				<tr>
+					<td> 		
+						<label> Your Osis Number: </label>
+					</td> 
+					<td>
+						<input name = "osisinput" type = "text"></input><br> 
+					</td>
+				</tr> 
+				<tr> 
+					<td>					
+						<label> Current Grade level: </label> 
+					</td> 
+					<td> 
+						<input name = "gradelevel" type = "text"></input><br> 
+					</td>
+				</tr> 
+				<tr>
+					<td> 				
+						<label>Your Full name: </label> 
+					</td> 
+					<td>
+						<input name = "fullname" type = "text"></input><br>
+					</td>
+				</tr>
+			</table>
 			<button type = "submit">SUBMIT</button><br><br>
 			<label style = "color: red">{{message}}</label><br>
 		</form>
