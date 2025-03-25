@@ -1,15 +1,15 @@
-table, th, td
+table,th,tr,td
 { 
-	width: 100px;
+	width: 250px; 
 }
 label
 {
 	font-family: comic sans ms;
 	font-size: 20px;
-	display: inline-block;
 }
 input
 {
+	width: 200px;
 	font-size: 20px;
 }
 h1
