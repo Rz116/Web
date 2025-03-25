@@ -1,6 +1,7 @@
+
 <html>
 	<head>
-		<title>Hello</title>
+		<title>Class information</title>
 		<link rel = "stylesheet" href = "/static/custom.css"></link>
 		<script src = "/static/check.js"></script>
 	</head>
@@ -9,7 +10,7 @@
 		<form method = "Post" action = "/output">
 			{% for i in range(0,periodnumber)%}
 				<table>
-					<tr> <th><b><label>Period {{i + 1}}</label></b><br></th> </tr>
+					<tr><th><b><u><label>Period {{i + 1}}</label></u></b><br></th> </tr>
 					<tr>
 						<td> 
 							<label> Class: </label>
@@ -35,9 +36,9 @@
 						</td>
 					</tr>
 				</table>
-				<hr>
+				<hr style = "color: black">
 			{%endfor%}
-			<label> Room Numbers must be 3 digits long</label><br>
+			<label> Room Numbers must be 3 digits long</label><br><br> 
 			<button type = "Submit">SUBMIT</button><br>
 			<label style = "color: red">{{check}}</label><br>
 		</form>
