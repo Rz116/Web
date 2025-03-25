@@ -14,7 +14,7 @@ def mainscreen():
     if (request.method == "POST"):           
         period = request.form.get("periodsinput")
         if (period == ""):            
-            return render_template("index1.html", periodsinput = "", message = "You Must type something in the input box")
+            return render_template("index1.html", periodsinput = "", message = "You must type something in the input box")
         else:
             check = list(period)
             length = len(check)
@@ -22,7 +22,10 @@ def mainscreen():
                 check2 = ord(check[i])
                 if(check2 < 48 or check2 > 57):
                     return render_template("index1.html", periodsinput = "", message = "You must type in a correct input(Must be number)")
-            return render_template('index2.html', periodnumber = int(period))
+            if(int(period) > 9):
+                return render_template("index1.html",periodsinput  = "", message = "You must type in a correct input(It cannot be greater than 9!!)")
+            else:               
+                return render_template('index2.html', periodnumber = int(period))
     else:
         outputscreen()
         return render_template("index3.html")
@@ -52,6 +55,7 @@ def outputscreeen():
                 if(check < 48 or check > 57):
                     return render_template('index2.html',periodnumber = int(period), check = "You must type in a number that is 3 digits long")
             rooms.append(room)
+    
     length = len(rooms)
     return render_template('index3.html', course = classes, teachers = teachers, rooms = rooms,length = length,headings = headings)
 
