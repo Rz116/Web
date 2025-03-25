@@ -16,9 +16,13 @@
 				{% for i in range(0,length) %} 
 					<tr>
 						<td> {{i + 1}} </td> 
-						<td> {{course[i]}}</td>
-						<td> {{teachers[i]}}</td> 
-						<td> {{rooms[i]}} </td>
+						{%for count in range(0,5)%}
+						<td> 
+							<label>{{course[i]}}</label><br>
+							<label>{{teachers[i]}}</label><br> 
+							<label> {{rooms[i]}}</label><br>
+						</td>
+						{%endfor%}
 					</tr>
 				{%endfor%}
 		</form>
