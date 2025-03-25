@@ -1,0 +1,25 @@
+table,th,tr,td
+{ 
+	width:500px; 
+}
+label
+{
+	font-family: comic sans ms;
+	font-size: 20px;
+}
+input
+{
+	width: 200px;
+	font-size: 20px;
+}
+h1
+{
+	font-family: comic sans ms;
+}
+button
+{
+	font-family: comic sans ms;
+	font-size: 18px; 
+	width: 12%; 
+	height: 30px;
+}
