@@ -32,7 +32,7 @@ def mainscreen():
     
 @app.route('/output',methods = ["GET","POST"])
 def outputscreeen():
-    headings = ["Period","Course", "Teacher", "Room"]
+    headings = ["Period","Day 1", "Day 2", "Day 3", "Day 4", "Day 5"]
     classes = []
     teachers = []
     rooms = []
