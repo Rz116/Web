@@ -1,3 +1,4 @@
+
 table, tr,th
 { 
 	margin-right: auto; 
@@ -11,7 +12,7 @@ td
 {
 	border: 1px solid black; 
 	border-collapse: collapse;
-	width: 150px; 
+	width: 200px; 
 	height: 65px;
 	text-align: center;
 }
@@ -19,6 +20,7 @@ h1
 {
 	text-align: center;
 	font-family: comic sans ms; 
+	font-size: 50px;
 }
 label
 { 	
