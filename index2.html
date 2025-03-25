@@ -9,7 +9,7 @@
 		<form method = "Post" action = "/output">
 			{% for i in range(0,periodnumber)%}
 				<table>
-					<tr> <td><b><label>Period {{i + 1}}</label></b><br></td> </tr>
+					<tr> <th><b><label>Period {{i + 1}}</label></b><br></th> </tr>
 					<tr>
 						<td> 
 							<label> Class: </label>
@@ -31,14 +31,15 @@
 							<label>Room: </label>
 						</td>
 						<td>
-								<input name = "room{{i + 1}}"></input><br>
+							<input name = "room{{i + 1}}"></input><br>
 						</td>
 					</tr>
 				</table>
-					<hr>
+				<hr>
 			{%endfor%}
-			<label>{{check}}</label><br>
-			<button type = "Submit">SUBMIT</button>
+			<label> Room Numbers must be 3 digits long</label><br>
+			<button type = "Submit">SUBMIT</button><br>
+			<label style = "color: red">{{check}}</label><br>
 		</form>
 	</body>
 
