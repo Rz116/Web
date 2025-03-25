@@ -1,15 +1,21 @@
-table,th,tr,td
+table, th, td
 { 
-	width: 250px; 
+	width: 100px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+th
+{
+	text-align: center;
 }
 label
 {
 	font-family: comic sans ms;
 	font-size: 20px;
+	display: inline-block;
 }
 input
 {
-	width: 200px;
 	font-size: 20px;
 }
 h1
@@ -19,8 +25,13 @@ h1
 button
 {
 	font-family: comic sans ms;
-	font-size: 18px; 
-	width: 12%; 
-	height: 30px;
+	font-size: 20px; 
+	width: 8%; 
+	height: 40px;
 }
-
+body
+{
+	text-align: center; 
+	margin: auto;
+	background-color: rgb(173, 216, 230);
+}
